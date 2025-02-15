@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "API Reference",
         "groups": [
           {
             "group": "Get Started",
@@ -39,9 +39,10 @@
         "groups": [
           {
             "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "openapi": {
+              "source": "/api-reference/openapi.yaml",
+              "directory": "api-reference"
+            }
           },
           {
             "group": "Endpoint Examples",
