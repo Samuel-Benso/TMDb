@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "TMDb API Documentation",
+  "name": "Mint Starter Kit",
   "colors": {
     "primary": "#01B4E4",
     "light": "#90CEA1",
@@ -58,8 +58,8 @@
     }
   },
   "logo": {
-    "light": "/logo/tmdb-light.svg",
-    "dark": "/logo/tmdb-dark.svg"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
@@ -71,7 +71,7 @@
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://www.themoviedb.org/settings/api"
+      "href": "https://dashboard.mintlify.com"
     }
   },
   "footer": {
