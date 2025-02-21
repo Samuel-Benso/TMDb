@@ -41,7 +41,7 @@
             "group": "API Documentation",
             "openapi": {
               "source": "/api-reference/openapi.yaml",
-              "directory": "starter/api-reference"
+              "directory": "api-reference"
             }
           },
           {
