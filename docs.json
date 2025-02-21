@@ -11,26 +11,20 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Getting Started",
+        "tab": "Documentation",
         "groups": [
           {
             "group": "Introduction",
             "pages": [
-              "introduction",
               "getting-started",
-              "quickstart"
-            ]
-          },
-          {
-            "group": "Authentication",
-            "pages": [
-              "authentication"
+              "api-key"
             ]
           },
           {
             "group": "Error Handling",
             "pages": [
-              "error-handling"
+              "error-handling",
+              "glossary"
             ]
           }
         ]
@@ -46,26 +40,10 @@
             }
           }
         ]
-      },
-      {
-        "tab": "Concepts",
-        "groups": [
-          {
-            "group": "Best Practices",
-            "pages": [
-              "concepts/best-practices"
-            ]
-          }
-        ]
       }
     ],
     "global": {
       "anchors": [
-        {
-          "anchor": "TMDb Documentation",
-          "href": "https://developer.themoviedb.org/docs",
-          "icon": "book-open-cover"
-        },
         {
           "anchor": "Community Forum",
           "href": "https://www.themoviedb.org/talk",
