@@ -1,35 +1,36 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "TMDb API Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#01B4E4",
+    "light": "#90CEA1",
+    "dark": "#032541"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "API Reference",
+        "tab": "Getting Started",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Introduction",
             "pages": [
               "introduction",
-              "quickstart",
-              "development"
+              "getting-started",
+              "quickstart"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Authentication",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "authentication"
+            ]
+          },
+          {
+            "group": "Error Handling",
+            "pages": [
+              "error-handling"
             ]
           }
         ]
@@ -38,19 +39,21 @@
         "tab": "API Reference",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Endpoints",
             "openapi": {
               "source": "/api-reference/openapi.yaml",
               "directory": "api-reference"
             }
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Concepts",
+        "groups": [
           {
-            "group": "Endpoint Examples",
+            "group": "Best Practices",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/authentication"
+              "concepts/best-practices"
             ]
           }
         ]
@@ -59,45 +62,45 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "TMDb Documentation",
+          "href": "https://developer.themoviedb.org/docs",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "anchor": "Community Forum",
+          "href": "https://www.themoviedb.org/talk",
+          "icon": "comments"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "API Status",
+          "href": "https://status.themoviedb.org/",
+          "icon": "signal"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/tmdb-light.svg",
+    "dark": "/logo/tmdb-dark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@themoviedb.org"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://www.themoviedb.org/settings/api"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/themoviedb",
+      "github": "https://github.com/themoviedb",
+      "linkedin": "https://linkedin.com/company/themoviedb"
     }
   }
 }
