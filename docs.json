@@ -2,7 +2,6 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "TMDb API Documentation",
-  "contentRoot": "starter",
   "colors": {
     "primary": "#01B4E4",
     "light": "#90CEA1",
@@ -12,19 +11,19 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Guides",
         "groups": [
           {
             "group": "Introduction",
             "pages": [
               "getting-started",
-              "API Key"
+              "api-key"
             ]
           },
           {
             "group": "Error Handling",
             "pages": [
-              "Possible Errors",
+              "possible-errors",
               "glossary"
             ]
           }
@@ -59,8 +58,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/themoviedb.svg",
+    "dark": "/logo/themoviedb.svg"
   },
   "navbar": {
     "links": [
