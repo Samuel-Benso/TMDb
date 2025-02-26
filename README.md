@@ -3,7 +3,7 @@
 This repository contains my **API Documentation Capstone Project**, built using **[Mintlify](https://mintlify.com/)** to provide a clean and interactive developer experience for working with the **TMDb API**.  
 
 ## 🚀 **Live Documentation**  
-[🔗 View Documentation]_(https://tvc.mintlify.app "View on mintlify")_
+[🔗 View Documentation](https://tvc.mintlify.app "View on mintlify")
 
 ---
 

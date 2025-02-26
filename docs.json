@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "TMDb API Documentation",
+  "contentRoot": "starter",
   "colors": {
     "primary": "#01B4E4",
     "light": "#90CEA1",
@@ -17,13 +18,13 @@
             "group": "Introduction",
             "pages": [
               "getting-started",
-              "api-key"
+              "API Key"
             ]
           },
           {
             "group": "Error Handling",
             "pages": [
-              "error-handling",
+              "Possible Errors",
               "glossary"
             ]
           }
