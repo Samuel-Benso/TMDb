@@ -1,0 +1,121 @@
+---
+title: "Finding IDs for API Requests"
+description: "Learn how to easily obtain the necessary IDs required for testing TMDb API endpoints."
+---
+
+# Finding IDs for API Requests
+
+Many TMDb API endpoints require specific IDs, such as movie IDs, TV show IDs, person IDs, and more. This guide will help you retrieve these IDs efficiently.
+
+## Movie and TV Show IDs
+To find a movie or TV show ID, use the **Search API**:
+
+```bash
+GET /search/movie?query=your_movie_name&api_key=YOUR_API_KEY
+GET /search/tv?query=your_tv_show_name&api_key=YOUR_API_KEY
+```
+
+### Example Response:
+```json
+{
+  "results": [
+    {
+      "id": 550,
+      "title": "Fight Club"
+    }
+  ]
+}
+```
+The `id` field (e.g., `550`) is the Movie ID you need.
+
+## Person (Actor, Director, etc.) IDs
+To get an actor's or director's ID, use the **Person Search API**:
+
+```bash
+GET /search/person?query=your_person_name&api_key=YOUR_API_KEY
+```
+
+### Example Response:
+```json
+{
+  "results": [
+    {
+      "id": 287,
+      "name": "Brad Pitt"
+    }
+  ]
+}
+```
+The `id` field (e.g., `287`) is the Person ID.
+
+## Collection IDs
+Some movies belong to collections, and you can retrieve collection IDs via the **Movie Details API**:
+
+```bash
+GET /movie/{movie_id}?api_key=YOUR_API_KEY
+```
+
+### Example Response:
+```json
+{
+  "id": 550,
+  "title": "Fight Club",
+  "belongs_to_collection": {
+    "id": 2344,
+    "name": "Fight Club Collection"
+  }
+}
+```
+The `id` inside `belongs_to_collection` (e.g., `2344`) is the Collection ID.
+
+## Genre IDs
+To fetch available genres and their IDs, use the **Genres API**:
+
+```bash
+GET /genre/movie/list?api_key=YOUR_API_KEY
+GET /genre/tv/list?api_key=YOUR_API_KEY
+```
+
+### Example Response:
+```json
+{
+  "genres": [
+    {
+      "id": 28,
+      "name": "Action"
+    }
+  ]
+}
+```
+The `id` (e.g., `28`) is the Genre ID.
+
+## TV Season and Episode IDs
+To get season and episode details, use the **TV Show Details API**:
+
+```bash
+GET /tv/{tv_id}/season/{season_number}?api_key=YOUR_API_KEY
+GET /tv/{tv_id}/season/{season_number}/episode/{episode_number}?api_key=YOUR_API_KEY
+```
+
+### Example Response:
+```json
+{
+  "id": 1101,
+  "episodes": [
+    {
+      "id": 23456,
+      "name": "Pilot"
+    }
+  ]
+}
+```
+The `id` (e.g., `23456`) is the Episode ID.
+
+## Alternative Method: TMDb Website
+You can also manually find IDs by searching for a movie, TV show, or person on [TMDb](https://www.themoviedb.org/) and checking the URL:
+- Movie: `https://www.themoviedb.org/movie/550` → ID = `550`
+- TV Show: `https://www.themoviedb.org/tv/1101` → ID = `1101`
+- Person: `https://www.themoviedb.org/person/287` → ID = `287`
+
+## Conclusion
+By using these methods, you can quickly obtain the required IDs for API requests. Be sure to store and manage these IDs efficiently to avoid unnecessary API calls. Happy coding! 🚀

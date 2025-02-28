@@ -36,77 +36,113 @@
           {
             "group": "ACCOUNT",
             "pages": [
-              "api-reference/endpoint/account/add-favorite",
-              "api-reference/endpoint/account/add-to-watchlist",
-              "api-reference/endpoint/account/favorite-movies",
-              "api-reference/endpoint/account/favorite-tv",
-              "api-reference/endpoint/account/get-details",
-              "api-reference/endpoint/account/lists",
-              "api-reference/endpoint/account/rated-movies",
-              "api-reference/endpoint/account/rated-tv-episodes",
-              "api-reference/endpoint/account/rated-tv",
-              "api-reference/endpoint/account/watchlist-movies",
-              "api-reference/endpoint/account/watchlist-tv"
+              {
+                "group": "Endpoints",
+                "pages": [
+                  "api-reference/endpoint/account/add-favorite",
+                  "api-reference/endpoint/account/add-to-watchlist",
+                  "api-reference/endpoint/account/favorite-movies",
+                  "api-reference/endpoint/account/favorite-tv",
+                  "api-reference/endpoint/account/get-details",
+                  "api-reference/endpoint/account/lists",
+                  "api-reference/endpoint/account/rated-movies",
+                  "api-reference/endpoint/account/rated-tv-episodes",
+                  "api-reference/endpoint/account/rated-tv",
+                  "api-reference/endpoint/account/watchlist-movies",
+                  "api-reference/endpoint/account/watchlist-tv"
+                ]
+              }
             ]
           },
 
           {
             "group": "AUTHENTICATION",
             "pages": [
-              "api-reference/endpoint/authentication/create-a-session-from-v4-token",
-              "api-reference/endpoint/authentication/create-guest-session",
-              "api-reference/endpoint/authentication/create-user-session",
-              "api-reference/endpoint/authentication/delete-session",
-              "api-reference/endpoint/authentication/request-token-with-login",
-              "api-reference/endpoint/authentication/request-token",
-              "api-reference/endpoint/authentication/validate-api-key"
+              {
+                "group": "Endpoints",
+                "pages": [
+                  "api-reference/endpoint/authentication/create-a-session-from-v4-token",
+                  "api-reference/endpoint/authentication/create-guest-session",
+                  "api-reference/endpoint/authentication/create-user-session",
+                  "api-reference/endpoint/authentication/delete-session",
+                  "api-reference/endpoint/authentication/request-token-with-login",
+                  "api-reference/endpoint/authentication/request-token",
+                  "api-reference/endpoint/authentication/validate-api-key"
+                ]
+              }
             ]
+          
           },
           
           {
             "group": "CERTIFICATIONS",
             "pages": [
-              "api-reference/endpoint/certifications/movie-certifications",
-              "api-reference/endpoint/certifications/tv-certification"
+              {
+                "group": "Endpoints",
+                "pages": [
+                  "api-reference/endpoint/certifications/movie-certifications",
+                  "api-reference/endpoint/certifications/tv-certification"
+                ]
+              }
             ]
           },
 
           {
             "group": "CHANGES",
             "pages": [
-              "api-reference/endpoint/changes/movie-list",
-              "api-reference/endpoint/changes/people-list",
-              "api-reference/endpoint/changes/tv-list"
+              {
+                "group": "Endpoints",
+                "pages": [
+                  "api-reference/endpoint/changes/movie-list",
+                  "api-reference/endpoint/changes/people-list",
+                  "api-reference/endpoint/changes/tv-list"
+                ]
+              }
             ]
           },
 
           {
             "group": "COLLECTIONS",
             "pages": [
-              "api-reference/endpoint/collections/details",
-              "api-reference/endpoint/collections/images",
-              "api-reference/endpoint/collections/translations"
+              {
+                "group": "Endpoints",
+                "pages": [
+                  "api-reference/endpoint/collections/details",
+                  "api-reference/endpoint/collections/images",
+                  "api-reference/endpoint/collections/translations"
+                ]
+              }
             ]
           },
 
           {
             "group": "COMPANIES",
             "pages": [
-              "api-reference/endpoint/companies/alternative-names",
-              "api-reference/endpoint/companies/details",
-              "api-reference/endpoint/companies/images"
+              {
+                "group": "Endpoints",
+                "pages": [
+                  "api-reference/endpoint/companies/alternative-names",
+                  "api-reference/endpoint/companies/details",
+                  "api-reference/endpoint/companies/images"
+                ]
+              }
             ]
           },
 
           {
             "group": "CONFIGURATION",
             "pages": [
-              "api-reference/endpoint/configuration/countries",
-              "api-reference/endpoint/configuration/details",
-              "api-reference/endpoint/configuration/jobs",
-              "api-reference/endpoint/configuration/languages",
-              "api-reference/endpoint/configuration/primary-translations",
-              "api-reference/endpoint/configuration/time-zones"
+              {
+                "group": "Endpoints",
+                "pages": [
+                  "api-reference/endpoint/configuration/countries",
+                  "api-reference/endpoint/configuration/details",
+                  "api-reference/endpoint/configuration/jobs",
+                  "api-reference/endpoint/configuration/languages",
+                  "api-reference/endpoint/configuration/primary-translations",
+                  "api-reference/endpoint/configuration/time-zones"
+                ]
+              }
             ]
           },
 
@@ -310,26 +346,26 @@
             "group": "TV-SERIES",
             "pages": [
               "api-reference/endpoint/tv-series/account-states",
-              "api-reference/endpoint/tv-seasons/add-rating",
-              "api-reference/endpoint/tv-seasons/aggregate-credits",
-              "api-reference/endpoint/tv-seasons/alternative-titles",
-              "api-reference/endpoint/tv-seasons/changes",
-              "api-reference/endpoint/tv-seasons/content-ratings",
-              "api-reference/endpoint/tv-seasons/delete-rating",
-              "api-reference/endpoint/tv-seasons/details",
-              "api-reference/endpoint/tv-seasons/episode-groups",
-              "api-reference/endpoint/tv-seasons/external-ids",
-              "api-reference/endpoint/tv-seasons/images",
-              "api-reference/endpoint/tv-seasons/keywords",
-              "api-reference/endpoint/tv-seasons/latest",
-              "api-reference/endpoint/tv-seasons/lists",
-              "api-reference/endpoint/tv-seasons/recommendations",
-              "api-reference/endpoint/tv-seasons/reviews",
-              "api-reference/endpoint/tv-seasons/screened-theatrically",
-              "api-reference/endpoint/tv-seasons/similar",
-              "api-reference/endpoint/tv-seasons/translations",
-              "api-reference/endpoint/tv-seasons/videos",
-              "api-reference/endpoint/tv-seasons/watch-providers"
+              "api-reference/endpoint/tv-series/add-rating",
+              "api-reference/endpoint/tv-series/aggregate-credits",
+              "api-reference/endpoint/tv-series/alternative-titles",
+              "api-reference/endpoint/tv-series/changes",
+              "api-reference/endpoint/tv-series/content-ratings",
+              "api-reference/endpoint/tv-series/delete-rating",
+              "api-reference/endpoint/tv-series/details",
+              "api-reference/endpoint/tv-series/episode-groups",
+              "api-reference/endpoint/tv-series/external-ids",
+              "api-reference/endpoint/tv-series/images",
+              "api-reference/endpoint/tv-series/keywords",
+              "api-reference/endpoint/tv-series/latest",
+              "api-reference/endpoint/tv-series/lists",
+              "api-reference/endpoint/tv-series/recommendations",
+              "api-reference/endpoint/tv-series/reviews",
+              "api-reference/endpoint/tv-series/screened-theatrically",
+              "api-reference/endpoint/tv-series/similar",
+              "api-reference/endpoint/tv-series/translations",
+              "api-reference/endpoint/tv-series/videos",
+              "api-reference/endpoint/tv-series/watch-providers"
            ]
           },
 

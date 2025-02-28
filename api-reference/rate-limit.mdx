@@ -1,0 +1,51 @@
+---
+title: Rate Limiting
+description: Learn about TMDb's rate limits, how to handle them, and best practices for API efficiency.
+---
+
+# Rate Limiting
+
+TMDb enforces rate limits to ensure fair usage and maintain API stability. This page explains how rate limiting works, how to handle rate limit errors, and best practices for optimizing API requests.
+
+## Rate Limits Overview
+
+The rate limit depends on your API key type:
+
+| API Key Type  | Requests per Second | Requests per Day |
+|--------------|-------------------|----------------|
+| Free        | 40                | 100,000       |
+| Pro         | 80                | 200,000       |
+| Enterprise  | 200               | 500,000       |
+
+> ⚠️ Exceeding these limits will result in a **429 Too Many Requests** error.
+
+## Handling Rate Limits
+
+When you hit the rate limit, the API responds with:
+
+```json
+{
+  "status_code": 25,
+  "status_message": "Too many requests. Try again later.",
+  "retry_after": 10
+}
+```
+
+### Retry Strategy
+- Check the `Retry-After` header to see how long to wait before making another request.
+- Implement **exponential backoff** to avoid being blocked.
+- Use **caching** to store frequent API responses instead of making unnecessary requests.
+
+## Best Practices to Avoid Rate Limiting
+
+✅ **Optimize Requests**: Only request the data you need using query parameters.
+✅ **Use Caching**: Store API responses locally to minimize redundant requests.
+✅ **Batch Requests**: Reduce the number of requests by fetching multiple items at once.
+✅ **Monitor Usage**: Track your API calls to avoid unexpected rate limit hits.
+
+## Need Higher Limits?
+If you need more requests, consider upgrading to a **Pro** or **Enterprise** plan. Contact [TMDb Support](mailto:support@themoviedb.org) for details.
+
+---
+
+For more information, see our [API Documentation](/api-reference).
