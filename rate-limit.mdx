@@ -1,9 +1,7 @@
 ---
 title: Rate Limiting
-description: Learn about TMDb's rate limits, how to handle them, and best practices for API efficiency.
+description: 
 ---
-
-# Rate Limiting
 
 TMDb enforces rate limits to ensure fair usage and maintain API stability. This page explains how rate limiting works, how to handle rate limit errors, and best practices for optimizing API requests.
 
@@ -38,10 +36,10 @@ When you hit the rate limit, the API responds with:
 
 ## Best Practices to Avoid Rate Limiting
 
-✅ **Optimize Requests**: Only request the data you need using query parameters.
-✅ **Use Caching**: Store API responses locally to minimize redundant requests.
-✅ **Batch Requests**: Reduce the number of requests by fetching multiple items at once.
-✅ **Monitor Usage**: Track your API calls to avoid unexpected rate limit hits.
+- Only request the data you need using query parameters.
+- Store API responses locally to minimize redundant requests.
+- Reduce the number of requests by fetching multiple items at once.
+- Track your API calls to avoid unexpected rate limit hits.
 
 ## Need Higher Limits?
 If you need more requests, consider upgrading to a **Pro** or **Enterprise** plan. Contact [TMDb Support](mailto:support@themoviedb.org) for details.
