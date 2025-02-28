@@ -24,7 +24,9 @@
             "group": "Error Handling",
             "pages": [
               "possible-errors",
-              "glossary"
+              "glossary",
+              "rate-limit",
+              "find-ids"
             ]
           }
         ]
